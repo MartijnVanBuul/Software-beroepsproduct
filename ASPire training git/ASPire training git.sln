@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ASPire training git", "ASPire training git\ASPire training git.csproj", "{F338C901-E583-4CAE-B085-6A807F78C641}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ASPire training git.Tests", "ASPire training git.Tests\ASPire training git.Tests.csproj", "{D78EA9A3-0441-4E87-9757-028CAF57B203}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F338C901-E583-4CAE-B085-6A807F78C641}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F338C901-E583-4CAE-B085-6A807F78C641}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F338C901-E583-4CAE-B085-6A807F78C641}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F338C901-E583-4CAE-B085-6A807F78C641}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D78EA9A3-0441-4E87-9757-028CAF57B203}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D78EA9A3-0441-4E87-9757-028CAF57B203}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D78EA9A3-0441-4E87-9757-028CAF57B203}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D78EA9A3-0441-4E87-9757-028CAF57B203}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
