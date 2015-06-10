@@ -155,6 +155,21 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Site.css" />
+    <Content Include="dist\css\material-fullpalette.css" />
+    <Content Include="dist\css\material-fullpalette.min.css" />
+    <Content Include="dist\css\material.css" />
+    <Content Include="dist\css\material.min.css" />
+    <Content Include="dist\css\ripples.css" />
+    <Content Include="dist\css\ripples.min.css" />
+    <Content Include="dist\css\roboto.css" />
+    <Content Include="dist\css\roboto.min.css" />
+    <Content Include="dist\fonts\LICENSE.txt" />
+    <Content Include="dist\fonts\Material-Design-Icons.svg" />
+    <Content Include="dist\js\material.js" />
+    <Content Include="dist\js\material.min.js" />
+    <Content Include="dist\js\ripples.js" />
+    <Content Include="dist\js\ripples.min.js" />
+    <Content Include="dist\test.html" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="packages.config" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
@@ -162,7 +177,30 @@
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="Account\Web.config" />
     <Content Include="AspireMaster.Master" />
-    <Content Include="WebForm1.aspx" />
+    <Content Include="stylesheet.css" />
+    <Content Include="WebPageLogIn.aspx" />
+    <Content Include="dist\css\material-fullpalette.css.map" />
+    <Content Include="dist\css\material-fullpalette.min.css.map" />
+    <Content Include="dist\css\material.css.map" />
+    <Content Include="dist\css\material.min.css.map" />
+    <Content Include="dist\css\ripples.css.map" />
+    <Content Include="dist\css\ripples.min.css.map" />
+    <Content Include="dist\css\roboto.css.map" />
+    <Content Include="dist\css\roboto.min.css.map" />
+    <Content Include="dist\fonts\Material-Design-Icons.eot" />
+    <Content Include="dist\fonts\Material-Design-Icons.ttf" />
+    <Content Include="dist\fonts\Material-Design-Icons.woff" />
+    <Content Include="dist\fonts\RobotoDraftBold.woff" />
+    <Content Include="dist\fonts\RobotoDraftBold.woff2" />
+    <Content Include="dist\fonts\RobotoDraftItalic.woff" />
+    <Content Include="dist\fonts\RobotoDraftItalic.woff2" />
+    <Content Include="dist\fonts\RobotoDraftMedium.woff" />
+    <Content Include="dist\fonts\RobotoDraftMedium.woff2" />
+    <Content Include="dist\fonts\RobotoDraftRegular.woff" />
+    <Content Include="dist\fonts\RobotoDraftRegular.woff2" />
+    <Content Include="dist\js\material.min.js.map" />
+    <Content Include="dist\js\ripples.min.js.map" />
+    <Content Include="WebPageRegister.aspx" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -258,6 +296,7 @@
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="AspireMaster.Master.cs">
       <DependentUpon>AspireMaster.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="AspireMaster.Master.designer.cs">
       <DependentUpon>AspireMaster.Master</DependentUpon>
@@ -269,6 +308,7 @@
     <Compile Include="Contact.aspx.designer.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Controllers\LogInController.cs" />
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -280,6 +320,15 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\IdentityModels.cs" />
+    <Compile Include="ObjectClasses\Condition.cs" />
+    <Compile Include="ObjectClasses\Exercise.cs" />
+    <Compile Include="ObjectClasses\Instrument.cs" />
+    <Compile Include="ObjectClasses\Location.cs" />
+    <Compile Include="ObjectClasses\Routine.cs" />
+    <Compile Include="ObjectClasses\Skill.cs" />
+    <Compile Include="ObjectClasses\Trainer.cs" />
+    <Compile Include="ObjectClasses\TrainSession.cs" />
+    <Compile Include="ObjectClasses\User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Site.Master.cs">
       <DependentUpon>Site.Master</DependentUpon>
@@ -303,12 +352,19 @@
     <Compile Include="ViewSwitcher.ascx.designer.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
     </Compile>
-    <Compile Include="WebForm1.aspx.cs">
-      <DependentUpon>WebForm1.aspx</DependentUpon>
+    <Compile Include="WebPageLogIn.aspx.cs">
+      <DependentUpon>WebPageLogIn.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="WebForm1.aspx.designer.cs">
-      <DependentUpon>WebForm1.aspx</DependentUpon>
+    <Compile Include="WebPageLogIn.aspx.designer.cs">
+      <DependentUpon>WebPageLogIn.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebPageRegister.aspx.cs">
+      <DependentUpon>WebPageRegister.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebPageRegister.aspx.designer.cs">
+      <DependentUpon>WebPageRegister.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

@@ -7,14 +7,9 @@ using System.Web.UI.WebControls;
 
 namespace ASPire_training_git
 {
-    public partial class WebPageLogIn : System.Web.UI.Page
+    public partial class WebPageRegister : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        protected void btnLogIn_Click(object sender, EventArgs e)
         {
 
         }

@@ -4,17 +4,52 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title></title>
+    <title>ASPire training</title>
+
+    <script src="Scripts/jquery-2.1.4.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
+    
+    <script src="Bootstrap/js/ripples.min.js"></script>
+    <script src="Bootstrap/js/material.min.js"></script>
+    
+    <link rel="Stylesheet" type="text/css" href="stylesheet.css" />
+
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="Content/themes/base/slider.css" rel="stylesheet" />
+    <!-- Include roboto.css to use the Roboto web font, material.css to include the theme and ripples.css to style the ripple effect -->
+    <link href="Bootstrap/css/roboto.min.css" rel="stylesheet" />
+    <link href="Bootstrap/css/material.min.css" rel="stylesheet" />
+    <link href="Bootstrap/css/ripples.min.css" rel="stylesheet" />
+
+    <link href="Style800.css" rel="stylesheet" />
+
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>
 <body>
-    <form id="form1" runat="server">
+    <div class="navbar navbar-default">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+        </button>
+        <a class="navbar-brand">ASPire Training</a>
+      </div>
+      <div class="navbar-collapse collapse navbar-responsive-collapse">
+        <ul class="nav navbar-nav">
+          <li><a href="javascript:void(0)">Inloggen</a></li>
+          <li><a href="javascript:void(0)">Mijn gegevens</a></li>
+          <li><a href="javascript:void(0)">Training</a></li>
+          <li><a href="javascript:void(0)">Registreren</a></li>
+        </ul>
+      </div>
+    </div>
+    
+        
+
     <div>
         <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
         
         </asp:ContentPlaceHolder>
     </div>
-    </form>
+
 </body>
 </html>
