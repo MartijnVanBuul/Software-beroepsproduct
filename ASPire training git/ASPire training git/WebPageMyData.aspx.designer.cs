@@ -10,7 +10,7 @@
 namespace ASPire_training_git {
     
     
-    public partial class WebPageRegister {
+    public partial class WebPageMyData {
         
         /// <summary>
         /// form1 control.
@@ -94,15 +94,6 @@ namespace ASPire_training_git {
         protected global::System.Web.UI.WebControls.TextBox tbExperience;
         
         /// <summary>
-        /// ddlGoal control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddlGoal;
-        
-        /// <summary>
         /// Spierenkweker control.
         /// </summary>
         /// <remarks>
@@ -166,12 +157,12 @@ namespace ASPire_training_git {
         protected global::System.Web.UI.WebControls.TextBox tbWeightGoal;
         
         /// <summary>
-        /// btnRegister control.
+        /// btnUpdate control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnRegister;
+        protected global::System.Web.UI.WebControls.Button btnUpdate;
     }
 }

@@ -13,5 +13,30 @@ namespace ASPire_training_git
         {
 
         }
+
+
+        protected void ddlGoal_OnSelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (ddlGoal.SelectedValue == "1")
+            {
+                Spierenkweker.Attributes["style"] = "display: block;";
+                Afvaller.Attributes["style"] = "display: none;";
+            }
+            else if (ddlGoal.SelectedValue == "2")
+            {
+                Spierenkweker.Attributes["style"] = "display: none;";
+                Afvaller.Attributes["style"] = "display: block;";
+            }
+            else if (ddlGoal.SelectedValue == "3")
+            {
+                Spierenkweker.Attributes["style"] = "display: block;";
+                Afvaller.Attributes["style"] = "display: block;";
+            }
+            else
+            {
+                Spierenkweker.Attributes["style"] = "display: none;";
+                Afvaller.Attributes["style"] = "display: none;";
+            }
+        }
     }
 }

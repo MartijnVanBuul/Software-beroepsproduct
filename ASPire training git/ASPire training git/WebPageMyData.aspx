@@ -1,12 +1,12 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/AspireMaster.Master" AutoEventWireup="true" CodeBehind="WebPageRegister.aspx.cs" Inherits="ASPire_training_git.WebPageRegister" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/AspireMaster.Master" AutoEventWireup="true" CodeBehind="WebPageMyData.aspx.cs" Inherits="ASPire_training_git.WebPageMyData" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-        <form id="form1" runat="server">
+    <form id="form1" runat="server">
         <div class="Content">
             <style>.contentWidth { width: 270px }</style>
 
-            <h1>Registreren</h1>
+            <h1>Mijn Gegevens</h1>
             <br />
             <br />
             <asp:Label AssociatedControlID="tbName" runat="server" Text="Naam:"></asp:Label>
@@ -56,17 +56,7 @@
             <br />
             <asp:Label AssociatedControlID="tbExperience" runat="server" Text="Ervaring:"></asp:Label>
             <br />
-            <asp:TextBox ID="tbExperience" TextMode="Number" runat="server" min="0" max="10" CssClass = "contentWidth" step="1"/>
-            <br />
-            <br />
-            <asp:Label AssociatedControlID="ddlGoal" runat="server" Text="Doel:"></asp:Label>
-            <br />
-            <asp:DropDownList ID="ddlGoal" runat="server" CssClass = "contentWidth" AutoPostBack="True" onselectedindexchanged="ddlGoal_OnSelectedIndexChanged">
-                <asp:ListItem Text="Vul hier uw doel in" Value="0"></asp:ListItem>
-                <asp:ListItem Text="Spierenkweker" Value="1"></asp:ListItem>
-                <asp:ListItem Text="Afvallen" Value="2"></asp:ListItem>
-                <asp:ListItem Text="Beide" Value="3"></asp:ListItem>
-            </asp:DropDownList>
+            <asp:TextBox ID="tbExperience" TextMode="Number" runat="server" min="0" ReadOnly="True" max="10" CssClass = "contentWidth" step="1"/>
             <br />
             <br />
             <div id="Spierenkweker" style="display: none;" runat="server">
@@ -99,7 +89,7 @@
                 <br />
             </div>
             <br />
-            <asp:Button ID="btnRegister" runat="server" Text="Registreren" CssClass = "contentWidth" />
+            <asp:Button ID="btnUpdate" runat="server" Text="Aanpassen" CssClass = "contentWidth" />
             <br />
             <br />
         </div>

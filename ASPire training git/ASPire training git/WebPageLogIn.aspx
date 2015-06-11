@@ -9,9 +9,9 @@
             <h1>Inloggen</h1>
             <br />
             <br />
-            <asp:Label ID="lblNaam" runat="server" Text="Naam:"></asp:Label>
+            <asp:Label ID="lblName" runat="server" Text="Naam:"></asp:Label>
             <br />
-            <asp:TextBox ID="tbNaam" runat="server" CssClass = "contentWidth"></asp:TextBox>
+            <asp:TextBox ID="tbName" runat="server" CssClass = "contentWidth"></asp:TextBox>
             <br />
             <br />
             <asp:Label ID="lblPassword" runat="server" Text="wachtwoord:"></asp:Label>
