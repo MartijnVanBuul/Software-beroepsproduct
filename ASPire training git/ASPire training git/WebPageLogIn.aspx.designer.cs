@@ -22,40 +22,22 @@ namespace ASPire_training_git {
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
         
         /// <summary>
-        /// lblName control.
+        /// tbEmailAddress control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblName;
+        protected global::System.Web.UI.WebControls.TextBox tbEmailAddress;
         
         /// <summary>
-        /// tbName control.
+        /// passLogIn control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox tbName;
-        
-        /// <summary>
-        /// lblPassword control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblPassword;
-        
-        /// <summary>
-        /// tbPassword control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox tbPassword;
+        protected global::System.Web.UI.HtmlControls.HtmlInputPassword passLogIn;
         
         /// <summary>
         /// btnLogIn control.
@@ -65,5 +47,14 @@ namespace ASPire_training_git {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button btnLogIn;
+        
+        /// <summary>
+        /// lblFailedLogIn control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblFailedLogIn;
     }
 }

@@ -39,11 +39,6 @@
             </asp:DropDownList>
             <br />
             <br />
-            <asp:Label AssociatedControlID="calBirthday" runat="server" Text="Geboortedatum:"></asp:Label>
-            <br />
-            <asp:Calendar ID="calBirthday" runat="server"></asp:Calendar>
-            <br />
-            <br />
             <asp:Label AssociatedControlID="tbEmail" runat="server" Text="E-mailadres:"></asp:Label>
             <br />
             <asp:TextBox ID="tbEmail" runat="server" CssClass = "contentWidth"></asp:TextBox>

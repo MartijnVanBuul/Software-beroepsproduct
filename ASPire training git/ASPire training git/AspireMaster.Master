@@ -27,6 +27,7 @@
     </asp:ContentPlaceHolder>
 </head>
 <body>
+    <style>.loggedLabel { height: 60px; line-height: 30px; color: inherit; margin-top: 50px; margin-bottom: 50px; }</style>
     <div class="navbar navbar-default">
       <div class="navbar-header">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
@@ -36,18 +37,20 @@
       <div class="navbar-collapse collapse navbar-responsive-collapse">
         <ul class="nav navbar-nav">
           <li><a href="http://localhost:31108/WebPageLogIn">Inloggen</a></li>
+          <li><a href="http://localhost:31108/WebPageLogOut">Uitloggen</a></li>
           <li><a href="http://localhost:31108/WebPageMyData">Mijn gegevens</a></li>
           <li><a href="http://localhost:31108/WebPageTraining">Training</a></li>
           <li><a href="http://localhost:31108/WebPageRegister">Registreren</a></li>
+          <li><asp:Label ID="lblLoggedIn" runat="server" CssClass="loggedLabel" Text=""></asp:Label></li>
         </ul>
       </div>
     </div>
+
     
-        
 
     <div>
         <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
-        
+            
         </asp:ContentPlaceHolder>
     </div>
 

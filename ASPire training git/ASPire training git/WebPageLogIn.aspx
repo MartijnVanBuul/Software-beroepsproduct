@@ -7,19 +7,22 @@
             <style>.contentWidth { width: 270px }</style>
 
             <h1>Inloggen</h1>
+            <asp:Label AssociatedControlID="tbEmailAddress" runat="server" Text="Email-adres:"></asp:Label>
+            <br />
+            <asp:TextBox ID="tbEmailAddress" runat="server" CssClass = "contentWidth"></asp:TextBox>
+            <asp:RequiredFieldValidator runat="server" ControlToValidate="tbEmailAddress" ErrorMessage="Vul je e-mailadres in."></asp:RequiredFieldValidator>
             <br />
             <br />
-            <asp:Label ID="lblName" runat="server" Text="Naam:"></asp:Label>
+            <asp:Label AssociatedControlID="passLogIn" runat="server" Text="wachtwoord:"></asp:Label>
             <br />
-            <asp:TextBox ID="tbName" runat="server" CssClass = "contentWidth"></asp:TextBox>
-            <br />
-            <br />
-            <asp:Label ID="lblPassword" runat="server" Text="wachtwoord:"></asp:Label>
-            <br />
-            <asp:TextBox ID="tbPassword" runat="server" CssClass = "contentWidth"></asp:TextBox>
+            <input id="passLogIn" type="password" runat="server" class="contentWidth"/>
+            <asp:RequiredFieldValidator runat="server" ControlToValidate="passLogIn" ErrorMessage="Vul je wachtwoord in."></asp:RequiredFieldValidator>
             <br />
             <br />
             <asp:Button ID="btnLogIn" runat="server" Text="Log in" CssClass = "contentWidth" OnClick="btnLogIn_Click" />
+            <br />
+            <br />
+            <asp:Label ID="lblFailedLogIn" runat="server" Text=""></asp:Label>
         </div>
     </form>
 </asp:Content>

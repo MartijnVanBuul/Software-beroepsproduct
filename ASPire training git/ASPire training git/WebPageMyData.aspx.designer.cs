@@ -22,6 +22,24 @@ namespace ASPire_training_git {
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
         
         /// <summary>
+        /// lblNotLoggedIn control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblNotLoggedIn;
+        
+        /// <summary>
+        /// loggedIn control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl loggedIn;
+        
+        /// <summary>
         /// tbName control.
         /// </summary>
         /// <remarks>
@@ -49,22 +67,13 @@ namespace ASPire_training_git {
         protected global::System.Web.UI.WebControls.TextBox tbLength;
         
         /// <summary>
-        /// ddlSex control.
+        /// lblSex control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddlSex;
-        
-        /// <summary>
-        /// calBirthday control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Calendar calBirthday;
+        protected global::System.Web.UI.WebControls.Label lblSex;
         
         /// <summary>
         /// tbEmail control.

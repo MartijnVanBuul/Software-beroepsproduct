@@ -42,6 +42,10 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Oracle.ManagedDataAccess, Version=4.121.1.0, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\odp.net.managed.121.1.2\lib\net40\Oracle.ManagedDataAccess.dll</HintPath>
+    </Reference>
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -313,6 +317,8 @@
       <DependentUpon>Contact.aspx</DependentUpon>
     </Compile>
     <Compile Include="Controllers\LogInController.cs" />
+    <Compile Include="Controllers\MyDataController.cs" />
+    <Compile Include="Database.cs" />
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -323,6 +329,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="MasterController.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="ObjectClasses\Condition.cs" />
     <Compile Include="ObjectClasses\Exercise.cs" />

@@ -5,22 +5,34 @@ using System.Web;
 
 namespace ASPire_Training
 {
+    public enum Goal
+    {
+        Afvaller,
+        Spierenkweker,
+        Beide
+    }
+
+    public enum Sex
+    {
+        M,
+        V
+    }
     public class User
     {
         //Fields
         private string name;
-        private int weight;
-        private int length;
-        private string sex;
-        private DateTime dateOfBirth;
+        private double weight;
+        private double length;
+        private Sex sex;
         private string emailaddress;
+        private string phoneNumber;
         private int experience;
+        private Goal goal;
         private string vitamins;
         private string minerals;
         private string proteins;
         private int dailyCalories;
-        private int goalWeight;
-        private List<Skill> skills;
+        private double goalWeight;
 
         //Properties
         #region properties
@@ -30,25 +42,19 @@ namespace ASPire_Training
             set { name = value; }
         }
 
-        public int Weight
+        public double Weight
         {
             get { return weight; }
             set { weight = value; }
         }
 
-        public int Length
+        public double Length
         {
             get { return length; }
             set { length = value; }
         }
 
-        public DateTime DateOfBirth
-        {
-            get { return dateOfBirth; }
-            set { dateOfBirth = value; }
-        }
-
-        public string Sex
+        public Sex Sex
         {
             get { return sex; }
             set { sex = value; }
@@ -60,10 +66,22 @@ namespace ASPire_Training
             set { emailaddress = value; }
         }
 
+        public string PhoneNumber
+        {
+            get { return phoneNumber; }
+            set { phoneNumber = value; }
+        }
+
         public int Experience
         {
             get { return experience; }
             set { experience = value; }
+        }
+
+        public Goal Goal
+        {
+            get { return goal; }
+            set { goal = value; }
         }
 
         public string Proteins
@@ -90,22 +108,15 @@ namespace ASPire_Training
             set { dailyCalories = value; }
         }
 
-        public int GoalWeight
+        public double GoalWeight
         {
             get { return goalWeight; }
             set { goalWeight = value; }
         }
-
-        public List<Skill> Skills
-        {
-            get { return skills; }
-            set { skills = value; }
-        }
-
         #endregion
 
         //Constructor
-        public User(int goalWeight, int dailyCalories, string name, int length, int weight, string sex, DateTime dateOfBirth, string emailaddress, int experience, string vitamins, string minerals, string proteins, List<Skill> skills)
+        public User(double goalWeight, int dailyCalories, string name, double length, double weight, Sex sex, string emailaddress, string phoneNumber, int experience, Goal goal, string vitamins, string minerals, string proteins)
         {
             this.goalWeight = goalWeight;
             this.dailyCalories = dailyCalories;
@@ -113,13 +124,13 @@ namespace ASPire_Training
             this.length = length;
             this.weight = weight;
             this.sex = sex;
-            this.dateOfBirth = dateOfBirth;
             this.emailaddress = emailaddress;
+            this.phoneNumber = phoneNumber;
             this.experience = experience;
+            this.goal = goal;
             this.vitamins = vitamins;
             this.minerals = minerals;
             this.proteins = proteins;
-            this.skills = skills;
         }
     }
 }
