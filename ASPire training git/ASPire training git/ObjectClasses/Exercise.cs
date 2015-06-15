@@ -8,6 +8,7 @@ namespace ASPire_Training
     public class Exercise
     {
         //Fields
+        private int exerciseID;
         private string exerciseName;
         private int repetitions;
         private int sets;
@@ -16,6 +17,13 @@ namespace ASPire_Training
 
         //Properties
         #region properties
+
+        public int ExerciseId
+        {
+            get { return exerciseID; }
+            set { exerciseID = value; }
+        }
+
         public string ExerciseName
         {
             get { return exerciseName; }
@@ -49,8 +57,9 @@ namespace ASPire_Training
         #endregion
 
         //Constructor
-        public Exercise(string exerciseName, int repetitions, int sets, int kCalories, List<Instrument> instruments)
+        public Exercise(int exerciseID, string exerciseName, int repetitions, int sets, int kCalories, List<Instrument> instruments)
         {
+            this.exerciseID = exerciseID;
             this.exerciseName = exerciseName;
             this.repetitions = repetitions;
             this.sets = sets;

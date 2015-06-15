@@ -7,8 +7,6 @@
             <style>.contentWidth { width: 270px }</style>
             <style>.contentMargin {margin-left: 80px}</style>
             <h1>Training</h1>
-            <br />
-            <br />
             <asp:Label AssociatedControlID="ddlExercise" runat="server" Text="Oefening:"></asp:Label>
             <br />
             <asp:DropDownList ID="ddlExercise" runat="server" CssClass = "contentWidth"></asp:DropDownList>

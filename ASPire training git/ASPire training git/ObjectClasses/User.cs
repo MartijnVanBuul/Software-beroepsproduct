@@ -7,8 +7,8 @@ namespace ASPire_Training
 {
     public enum Goal
     {
-        Afvaller,
         Spierenkweker,
+        Afvaller,
         Beide
     }
 

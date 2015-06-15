@@ -14,15 +14,11 @@ namespace ASPire_training_git.Controllers
             masterController = new MasterController();
         }
 
+        //Using the mastercontroller to change the data of a user.
         public void ChangeData(string name, string weight, string length, string email,
                 string phoneNumber, string experience, string vitamins, string minerals, string proteins, string dailyCalories, string goalWeight)
         {
             masterController.ChangeUserData(name, weight, length, email, phoneNumber, experience, vitamins, minerals, proteins, CheckIfEmptyToDouble(dailyCalories), CheckIfEmptyToDouble(goalWeight));
-        }
-
-        static double CheckIfEmptyToDouble(object stringToCheck)
-        {
-            return stringToCheck.ToString() == "" ? 0 : Convert.ToDouble(stringToCheck.ToString());
         }
 
         public User GetUser(string eMailAddress)
@@ -52,6 +48,12 @@ namespace ASPire_training_git.Controllers
                     dataTable[6][0], dataTable[7][0], Convert.ToInt32(dataTable[8][0]), Goal.Beide,
                     CheckIfNullToString(dataTable[10][0]), CheckIfNullToString(dataTable[11][0]), CheckIfNullToString(dataTable[12][0]));
             }
+        }
+
+        //Check if the value is an empty string, if so it will return 0.
+        static double CheckIfEmptyToDouble(object stringToCheck)
+        {
+            return stringToCheck.ToString() == "" ? 0 : Convert.ToDouble(stringToCheck.ToString());
         }
 
         //Function to make sure no null values are being converted to strings.

@@ -16,11 +16,13 @@
                 <asp:Label AssociatedControlID="tbWeight" runat="server" Text="Gewicht:"></asp:Label>
                 <br />
                 <asp:TextBox ID="tbWeight" TextMode="Number" runat="server" min="0" max="500" CssClass = "contentWidth" step="0.1"/>
+                <asp:RequiredFieldValidator runat="server" ControlToValidate="tbWeight" ErrorMessage="Vul je gewicht in."></asp:RequiredFieldValidator>
                 <br />
                 <br />
                 <asp:Label AssociatedControlID="tbLength" runat="server" Text="Lengte:"></asp:Label>
                 <br />
                 <asp:TextBox ID="tbLength" TextMode="Number" runat="server" min="0" max="250" CssClass = "contentWidth" step="0.1"/>
+                <asp:RequiredFieldValidator runat="server" ControlToValidate="tbLength" ErrorMessage="Vul je lengte in."></asp:RequiredFieldValidator>
                 <br />
                 <br />
                 <asp:Label AssociatedControlID="lblSex" runat="server" Text="Geslacht:"></asp:Label>
@@ -36,6 +38,7 @@
                 <asp:Label AssociatedControlID="tbPhoneNumer" runat="server" Text="Telefoonnummer:"></asp:Label>
                 <br />
                 <asp:TextBox ID="tbPhoneNumer" runat="server" CssClass = "contentWidth"></asp:TextBox>
+                <asp:RequiredFieldValidator runat="server" ControlToValidate="tbPhoneNumer" ErrorMessage="Vul je telefoonnummer in."></asp:RequiredFieldValidator>
                 <br />
                 <br />
                 <asp:Label AssociatedControlID="tbExperience" runat="server" Text="Ervaring:"></asp:Label>

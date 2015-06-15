@@ -31,6 +31,15 @@ namespace ASPire_training_git {
         protected global::System.Web.UI.WebControls.TextBox tbName;
         
         /// <summary>
+        /// passwPassword control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlInputPassword passwPassword;
+        
+        /// <summary>
         /// tbWeight control.
         /// </summary>
         /// <remarks>

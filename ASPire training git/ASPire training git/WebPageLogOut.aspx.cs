@@ -11,7 +11,11 @@ namespace ASPire_training_git
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            //If there is a user he is logged out.
+            if (Session["loggedInUser"] != null && !Page.IsPostBack)
+            {
+                Session["loggedInUser"] = null;
+            }
         }
     }
 }

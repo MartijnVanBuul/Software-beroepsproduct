@@ -7,19 +7,21 @@ namespace ASPire_Training
 {
     public class Instrument
     {
-        public enum InstrumentType
-        {
-            Dumbbel,
-            Barbell
-        }
-
         //Fields
+        private int instrumentID;
         private string instrumentName;
         private int weigth;
-        private InstrumentType type;
+        private string type;
 
         //Properties
         #region properties
+
+        public int InstrumentId
+        {
+            get { return instrumentID; }
+            set { instrumentID = value; }
+        }
+
         public string InstrumentName
         {
             get { return instrumentName; }
@@ -32,7 +34,7 @@ namespace ASPire_Training
             set { weigth = value; }
         }
 
-        public InstrumentType Type
+        public string Type
         {
             get { return type; }
             set { type = value; }
@@ -40,8 +42,9 @@ namespace ASPire_Training
         #endregion
 
         //Constructor
-        public Instrument(string instrumentName, int weigth, InstrumentType type)
+        public Instrument(int instrumentID, string instrumentName, int weigth, string type)
         {
+            this.instrumentID = instrumentID;
             this.instrumentName = instrumentName;
             this.weigth = weigth;
             this.type = type;

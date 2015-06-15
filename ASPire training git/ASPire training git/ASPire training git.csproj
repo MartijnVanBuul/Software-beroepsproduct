@@ -206,6 +206,7 @@
     <Content Include="dist\fonts\RobotoDraftRegular.woff2" />
     <Content Include="dist\js\material.min.js.map" />
     <Content Include="dist\js\ripples.min.js.map" />
+    <Content Include="WebPageLogOut.aspx" />
     <Content Include="WebPageMyData.aspx" />
     <Content Include="WebPageRegister.aspx" />
     <Content Include="WebPageTraining.aspx" />
@@ -318,6 +319,8 @@
     </Compile>
     <Compile Include="Controllers\LogInController.cs" />
     <Compile Include="Controllers\MyDataController.cs" />
+    <Compile Include="Controllers\RegisterController.cs" />
+    <Compile Include="Controllers\TrainingController.cs" />
     <Compile Include="Database.cs" />
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
@@ -369,6 +372,13 @@
     </Compile>
     <Compile Include="WebPageLogIn.aspx.designer.cs">
       <DependentUpon>WebPageLogIn.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebPageLogOut.aspx.cs">
+      <DependentUpon>WebPageLogOut.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebPageLogOut.aspx.designer.cs">
+      <DependentUpon>WebPageLogOut.aspx</DependentUpon>
     </Compile>
     <Compile Include="WebPageMyData.aspx.cs">
       <DependentUpon>WebPageMyData.aspx</DependentUpon>

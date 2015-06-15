@@ -16,6 +16,7 @@ namespace ASPire_training_git
         {
             myDataController = new MyDataController();
 
+            //Fills the data fields if a user is logged in.
             if (Session["loggedInUser"] != null && !Page.IsPostBack)
             {
                 loggedIn.Attributes["style"] = "display: block;";
@@ -76,6 +77,7 @@ namespace ASPire_training_git
             }
         }
 
+        //Updates the data.
         protected void btnUpdate_OnClick(object sender, EventArgs e)
         {
             myDataController.ChangeData(tbName.Text, tbWeight.Text, tbLength.Text, tbEmail.Text,

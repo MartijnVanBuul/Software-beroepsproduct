@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Data;
 using System.Linq;
 using System.Web;
+using System.Web.Configuration;
 using Oracle.ManagedDataAccess;
 using Oracle.ManagedDataAccess.Client;
 
@@ -11,26 +12,7 @@ namespace ICT4Events.Database
     public class Database
     {
         //Fields
-        private string _user = "ASPire";
-        private string _password = "qwert12345";
         private OracleConnection _connection;
-
-        //Properties
-        #region properties
-
-        public string User
-        {
-            get { return _user; }
-            set { _user = value; }
-        }
-
-        public string Password
-        {
-            get { return _password; }
-            set { _password = value; }
-        }
-
-        #endregion
 
         //Constructor
         public Database()
@@ -43,10 +25,10 @@ namespace ICT4Events.Database
         {
             //If there is a correct combination between username and password a connection will be established.
             try
-            {
+            {   
+                var config = WebConfigurationManager.OpenWebConfiguration("\\Web.config");
                 _connection = new OracleConnection();
-                _connection.ConnectionString = "User Id=" + _user + ";Password=" + _password + ";Data Source=" +
-                                              " //127.0.0.1:1521/xe" + ";";
+                _connection.ConnectionString = config.AppSettings.Settings["database_connection_settings"].Value;
                     //orcl is de servicename (kan anders zijn, is afhankelijk van de Oracle server die geinstalleerd is. Mogelijk is ook Oracle Express: xe
                 _connection.Open();
                 return true;
@@ -161,6 +143,25 @@ namespace ICT4Events.Database
                 oracleCommand.Connection = _connection;
                 oracleCommand.CommandText = procedureName;
                 oracleCommand.CommandType = CommandType.StoredProcedure;
+
+                foreach (OracleParameter parameter in procedureInParameter)
+                {
+                    oracleCommand.Parameters.Add(parameter.ParameterName, OracleDbType.Varchar2).Value = parameter.Value;
+                }
+                oracleCommand.ExecuteNonQuery();
+            }
+        }
+
+        public void ExecuteProcedureCreateUser(string procedureName, List<OracleParameter> procedureInParameter)
+        {
+            if (Connect())
+            {
+                OracleCommand oracleCommand = new OracleCommand();
+
+                oracleCommand.Connection = _connection;
+                oracleCommand.CommandText = procedureName;
+                oracleCommand.CommandType = CommandType.StoredProcedure;
+                oracleCommand.BindByName = true;
 
                 foreach (OracleParameter parameter in procedureInParameter)
                 {
